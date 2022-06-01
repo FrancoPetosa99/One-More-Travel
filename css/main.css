@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 /* carrusel */
 .carousel-item{
     width: 100%;
@@ -94,6 +99,11 @@
     grid-row: 4/5;
     justify-self: center;
 }
+.btnCardPromociones:hover{
+    background-color: white;
+    color: #085394;
+    border: solid 1px #085394;
+}
 .linkVermas{
     color: #085394;
     font-weight: bold;
@@ -104,6 +114,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 15px;
+    cursor: pointer;
 }
 .cardReseñasContainer{
     height: auto;
