@@ -155,3 +155,12 @@
     align-items: center;
     gap: 5px;
 }
+
+/* 
+    -hace que el carrusel tenga una height auto y se adapte al tamaño de las imagenes.
+    Nota: para que funcione es importante que las imagenes tengan las mismas dimensiones (b x h)
+*/
+.carousel-item{
+    height: auto;
+    max-height: 500px;
+}

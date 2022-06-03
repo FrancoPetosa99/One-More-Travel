@@ -10,7 +10,10 @@
 #linkList{
     height: auto;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .links{
     font-weight: bold;
@@ -18,8 +21,6 @@
     list-style: none;
     color: white;
     cursor: pointer;
-    display: inline-block;
-    margin-left: 5px;
 }
 .links :hover {
     background-color: #085394;
@@ -31,8 +32,10 @@
 }
 #navLogo{
     height: auto;
-    width: 100%;
-    max-width: 150px;
+    width: 150px;
+}
+#btnCloseMenu{
+    display: none ;
 }
 /* media query */
 @media (max-width: 600px) {
@@ -44,16 +47,37 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
-        max-width: 250px;
+        width: 0px;
         height: 100vh;
         z-index: 100;
-        background-color: rgb(12, 12, 12,.7);
-        color: white;
-        padding-top: 20px;
+        background-color: #f1c232;
         overflow: hidden;
+        gap: 20px;
+        animation: displayMenu 0.5s ease-in-out forwards;
+    }
+    @keyframes displayMenu {
+        0%{width: 0px;}
+        100% {width: 200px;}
+    }
+    .links > a {
+        color: white;
+    }
+    .links:hover{
+        padding-left: 15px;
     }
     #navbar {
         justify-content: flex-start;
+    }
+    #btnCloseMenu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        z-index: 101;
+        background-color: transparent;
+        border: solid 1px transparent;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
     }
 }
