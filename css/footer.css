@@ -5,12 +5,27 @@ footer{
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto ;
+    grid-template-rows: auto auto 100px ;
     padding: 15px;
 }
-
-#divSocialMediaList{
+#footerTitle{
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+#divAboutUs {
     grid-row: 2/3;
+    grid-column: 2/3;
+}
+#divHotel {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+#divContact {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+#divSocialMediaList{
+    grid-row: 3/4;
     grid-column: 4/5;
     width: 100%;
     height: auto;
@@ -33,5 +48,63 @@ footer{
     transition: 0.25s ease-in-out;
     transform: translateY(-5px);
 }
+/* media queries */
+@media (max-width: 600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 100px;
+    }
+    #footerTitle {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    #divAboutUs {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #divHotel {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #divContact {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    #divSocialMediaList {
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+}
+@media (max-width: 400px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto 100px;
+    }
 
+    #footerTitle {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
 
+    #divAboutUs {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    #divHotel {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    #divContact {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    #divSocialMediaList {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+}
