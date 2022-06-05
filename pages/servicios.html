@@ -17,14 +17,25 @@
 <body style="position: relative;">
     <!-- navbar -->
     <nav id="navbar">
-        <a href="../index.html"><img id="navLogo" src="../img/onemoretravel-logo.png" alt="logo empresa" /></a>
-        <ul id="linkList">
+        <a href="index.html"><img id="navLogo" src="../img/onemoretravel-logo.png" alt="logo empresa" /></a>
+        <ul id="linkList" class="linkList">
             <li class="links"><a href="../index.html">Home</a></li>
             <li class="links"><a href="../pages/servicios.html">Servicios</a></li>
             <li class="links"><a href="../pages/destinos.html">Destinos</a></li>
             <li class="links"><a href="../pages/hoteles.html">Hoteles</a></li>
             <li class="links"><a href="../pages/contacto.html">Contacto</a></li>
         </ul>
+        <!-- for mobile view -->
+        <div id="btnCloseMenu" class="btnCloseMenu hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div id="hamburguerMenu" class="hamburguerMenu hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-------------------->
     </nav>
     <h1 class="title">Nuestros Servicios</h1>
     <!-- contenedor de iconos -->
@@ -180,6 +191,42 @@
         </a>
     </div>
     </footer>
+    <!-- script responsive navbar menu -->
+    <script defer>
+        const btnClose = document.getElementById("btnCloseMenu")
+        const hamburguerMenu = document.getElementById("hamburguerMenu")
+        const linkList = document.getElementById("linkList")
+        btnClose.addEventListener("click", () => {
+            hamburguerMenu.classList.toggle("hide")
+            btnClose.classList.toggle("hide")
+            linkList.classList.remove("activeNav")
+        })
+        hamburguerMenu.addEventListener("click", () => {
+            hamburguerMenu.classList.toggle("hide")
+            btnClose.classList.toggle("hide")
+            linkList.classList.add("activeNav")
+        })
+        window.addEventListener("resize", () => {
+            if (window.innerWidth < 600 && !linkList.classList.contains("activeNav")) {
+                hamburguerMenu.classList.remove("hide")
+            } else if (window.innerWidth < 600 && linkList.classList.contains("activeNav")) {
+                btnClose.classList.remove("hide")
+            } else {
+                hamburguerMenu.classList.add("hide")
+                btnClose.classList.add("hide")
+            }
+        })
+        window.addEventListener("load", () => {
+            if (window.innerWidth < 600 && !linkList.classList.contains("activeNav")) {
+                hamburguerMenu.classList.remove("hide")
+            } else if (window.innerWidth < 600 && linkList.classList.contains("activeNav")) {
+                btnClose.classList.remove("hide")
+            } else {
+                hamburguerMenu.classList.add("hide")
+                btnClose.classList.add("hide")
+            }
+        })
+    </script>
 </body>
 
 </html>
