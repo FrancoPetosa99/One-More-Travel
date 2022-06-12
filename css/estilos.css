@@ -253,14 +253,15 @@ footer{
     grid-template-columns: 1fr auto;
     justify-items: center;
     gap: 5px;
+    margin-bottom: 5px;
 }
 .cardContainer{
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     display: grid;
-    grid-template-columns: repeat(4,220px) ;
-    justify-content: center;
-    gap: 5px;
+    grid-template-columns: repeat(6,240px);
+    justify-items: center;
+    padding: 5px;
 }
 .cardPromociones{
     height: 400px;
@@ -293,11 +294,6 @@ footer{
     width: 100%;
     height: auto;
 }
-.imgCardPromociones:hover{
-    transition: 0.5s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-}
 .btnCardPromociones{
     height: 40px;
     width: 100%;
@@ -314,8 +310,8 @@ footer{
 .ofertasContainer{
     width: 250px;
     height: 400px;
-    overflow-y: scroll;
-    gap: 5px;
+    overflow-y: auto;
+    padding: 5px;
 }
 .cardOferta{
     width: 100%;
@@ -393,7 +389,7 @@ footer{
         grid-template-columns: 1fr;
     }
     .cardContainer{
-        grid-template-columns: repeat(4,200px) ;
+        grid-template-columns: repeat(6,220px) ;
     }
     .cardPromociones{
         width: 200px;
@@ -442,9 +438,29 @@ footer{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.scrollCustomizedVertical::-webkit-scrollbar{
+    height: 5px;
+}
+.scrollCustomizedVertical::-webkit-scrollbar-track {
+    background-color: rgb(190, 184, 184);
+}
+.scrollCustomizedVertical::-webkit-scrollbar-thumb {
+    background-color: #f1c232;
+    border-radius: 10px;
+}
+.scrollCustomizedHorizontal::-webkit-scrollbar{
+    width: 5px;
+}
+.scrollCustomizedHorizontal::-webkit-scrollbar-track {
+    background-color: rgb(190, 184, 184);
+}
+.scrollCustomizedHorizontal::-webkit-scrollbar-thumb {
+    background-color: #f1c232;
+    border-radius: 10px;
+}
 /* -------- loading css -------- */
 .loadingModal{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100vh;
