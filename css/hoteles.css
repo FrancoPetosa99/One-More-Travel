@@ -117,9 +117,43 @@
     border: solid 1px #085394;
 }
 .rotate{
-    animation: spin 0.5s ease-in-out forwards;
+    animation: arrowUp 0.5s ease-in-out forwards;
 }
-@keyframes spin {
+@keyframes arrowUp {
     0%{ transform: rotateZ(0deg);}
     100%{transform: rotateZ(180deg);}
 }
+
+/* -------- loading css -------- */
+.loadingModal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 200;
+}
+
+#spinner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+    border-left: solid 2px #f1c232;
+    animation: spin 0.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------- */

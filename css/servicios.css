@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth; /* me permite dar un efecto de scroll automatico suave*/
 }
 .title {
     color: #085394;
@@ -70,3 +71,36 @@
     top: 5px;
     right: 5px;
 }
+
+/* -------- loading css -------- */
+.loadingModal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#spinner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+    border-left: solid 2px #f1c232;
+    animation: spin 0.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------- */

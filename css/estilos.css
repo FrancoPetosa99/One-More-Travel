@@ -1,0 +1,494 @@
+/*--- css for navbar ---*/
+nav{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+    background-color: white;
+}
+.linkList{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navLinks{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+.navLinks :hover {
+    background-color: #085394;
+    color: white;
+}
+.navLinks>a{
+    text-decoration: none;
+    color: #085394;
+}
+#navLogo{
+    height: auto;
+    width: 150px;
+}
+.hamburguerMenu {
+    height: 20px;
+    width: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.btnCloseMenu {
+    position: relative;
+    height: 20px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: closeMenu 0.5s ease-in-out forwards;
+}
+.btnCloseMenu > span:nth-child(1){
+    position: absolute;
+    animation: firstBar 0.5s ease-in-out forwards;
+}
+.btnCloseMenu>span:nth-child(2) {
+    position: absolute;
+    animation: secondBar 0.5s ease-in-out forwards;
+}
+@keyframes firstBar {
+    0% {transform: translateY(-20px) rotate(0deg);}
+    100% {transform: translateY(0px) rotate(50deg);}
+}
+@keyframes secondBar {
+    0% {transform: translateY(20px) rotate(0deg);}
+    100% {transform: translateY(0px) rotate(-50deg);}
+}
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f1c232;
+}
+/* media query */
+@media (max-width: 600px) {
+    .linkList{display: none;}
+    .activeNav{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 0px;
+        height: 100vh;
+        z-index: 100;
+        background-color: #f1c232;
+        overflow: hidden;
+        gap: 20px;
+        animation: displayNav 0.5s ease-in-out forwards;
+    }
+    @keyframes displayNav {
+        0%{width: 0px;}
+        100% {width: 250px;}
+    }
+    .navLinks > a {color: white;}   
+}
+
+/* --------------------  */
+
+/*--- css for footer ---*/
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #085394;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 100px ;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footerLinks{
+    color: white;
+    text-decoration: none;
+}
+.footerLinks:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footerIcon{
+    height: 25px;
+    width: 25px;
+}
+#footerTitle{
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+#footerColumnAboutUs {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#footerColumnHotel {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#footerColumnContact {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+#footerColumnDestinos {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+#SocialListIcons{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.socialMediaLink{
+    height: auto;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+/* animación en los iconos de redes sociales */
+.socialMediaLink:hover{
+    border-bottom: 2px solid white;
+}
+.socialMediaLink>svg:hover{
+    animation: goUp 0.5s ease-in-out forwards;
+    transition: 0.25s ease-in-out;
+    transform: translateY(-5px);
+}
+/* media queries */
+@media (max-width: 600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 100px;
+        padding: 5px;
+    }
+    .footerIcon {
+        height: 20px;
+        width: 20px;
+    }
+    .footerColumns > li {
+        font-size: 12px;
+    }
+    .footerColumns > h4 {
+        font-size: 16px;
+    }
+    #footerTitle {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    #footerColumnAboutUs {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #footerColumnHotel {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #footerColumnContact {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    #SocialListIcons {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+}
+
+/* --------------------  */
+
+/*--- css for index page ---*/
+/* carrusel */
+.carousel-item{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.carouselLabel{
+    background-color: #f1c232;
+    border-radius: 20px;
+    text-align: left;
+    padding: 2px 15px 2px 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+/*------------*/
+.carousel-item{
+    /* 
+        -hace que el carrusel tenga una height auto y se adapte al tamaño de las imagenes.
+        Nota: para que funcione es importante que las imagenes tengan las mismas dimensiones (b x h)
+    */
+    height: auto;
+    max-height: 500px;
+}
+.subTitle{
+    background-color: #f1c232;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+}
+.sectionOfertas{
+    height: auto;
+    width: 100%;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px,350px));*/
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+    gap: 5px;
+}
+.cardContainer{
+    width: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(4,220px) ;
+    justify-content: center;
+    gap: 5px;
+}
+.cardPromociones{
+    height: 400px;
+    width: 220px;
+    border: solid 2px #085394;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.offerIcon{
+    height:50px;
+    width: 50px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    top: 6px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.imgCardPromociones{
+    width: 100%;
+    height: auto;
+}
+.imgCardPromociones:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.btnCardPromociones{
+    height: 40px;
+    width: 100%;
+    background-color: #085394;
+    color: white;
+    border: solid 1px transparent;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+.btnCardPromociones:hover{
+    font-weight: bold;
+    font-size: 16px;
+}
+.ofertasContainer{
+    width: 250px;
+    height: 400px;
+    overflow-y: scroll;
+    gap: 5px;
+}
+.cardOferta{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+.cardOferta > a {
+    color: white;
+    background-color: #f1c232;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 15px;
+    height: 28px;
+    text-decoration: none;
+}
+.linkVermas{
+    color: #085394;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.cardReseñasContainer{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 5px;
+}
+.cardReseñas{
+    height: 450px;
+    width: 90%;
+    border: solid 2px #085394;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4px;
+    position: relative;
+}
+.imgContainerUser{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.starList{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+@media (max-width: 600px){
+    .sectionOfertas{
+        grid-template-columns: 1fr;
+    }
+    .cardContainer{
+        grid-template-columns: repeat(4,200px) ;
+    }
+    .cardPromociones{
+        width: 200px;
+        height: 350px;
+    }
+    .ofertasContainer{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardOferta{
+        height: auto;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .offerIcon{
+        height:35px;
+        width: 35px;
+        font-size: 8px;
+    }
+    .btnCardPromociones{
+        height: 35px;
+        font-size: 10px;
+    }
+    .btnCardPromociones:hover{
+        font-size: 14px;
+    }
+}
+/* --------------------  */
+
+
+
+
+
+
+
+
+/*--- css for general use ---*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* -------- loading css -------- */
+.loadingModal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#spinner{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+    border-left: solid 2px #f1c232;
+    animation: spin 0.5s ease-in-out infinite;
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+/* ---------------- */
+/* -------- scrollTop css -------- */
+#btnScrollTop{
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    border: solid 1px transparent;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+}
+#btnScrollTop:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 2px 2px;
+    cursor: pointer;
+}
+.btnScrollTopIcon{
+    height: 25px;
+    width: 25px;
+}
+/* ---------------- */
+.hide {display: none !important;}
+/* --------------------  */
