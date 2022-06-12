@@ -1,6 +1,6 @@
 # One-More-Travel
 Web page development:
-\ntechnologies:
+technologies:
 -Html
 -Css
 -Javascript
