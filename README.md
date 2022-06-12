@@ -1,2 +1,8 @@
 # One-More-Travel
-curso desarrollo web - coder house
+Web page development:
+technologies:
+-Html
+-Css
+-Javascript
+Libraries:
+-Bootstrap
