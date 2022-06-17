@@ -264,16 +264,20 @@ footer{
     padding: 5px;
 }
 .cardPromociones{
-    height: 400px;
+    height: auto;
     width: 220px;
     border: solid 2px #085394;
     overflow: hidden;
     border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
+}
+.cardPromociones > .text{
+    color: #085394;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
 }
 .offerIcon{
     height:50px;
@@ -293,8 +297,21 @@ footer{
 .imgCardPromociones{
     width: 100%;
     height: auto;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.cardPromociones > .cardTitle{
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-weight: bold;
 }
 .btnCardPromociones{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    align-self: flex-end;
     height: 40px;
     width: 100%;
     background-color: #085394;
@@ -414,21 +431,92 @@ footer{
         width: 35px;
         font-size: 8px;
     }
-    .btnCardPromociones{
-        height: 35px;
-        font-size: 10px;
-    }
-    .btnCardPromociones:hover{
-        font-size: 14px;
-    }
+    
 }
 /* --------------------  */
 
 
-
-
-
-
+/* css for servicios page */
+#pageServicios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#pageServicios  h1{
+    text-align: left;
+    width: 100%;
+    height: auto;
+    color: #f1c232;
+    padding-left: 10px;
+}
+#pageServicios card{
+    height: auto;
+    width: 95%;
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    box-shadow: 0px 0px 15px 1px;
+    position: relative;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition: 0.5s ease-in-out;
+}
+#pageServicios card .cardBody p{
+    font-size: 1em;
+    padding-left: 4px;
+}
+#pageServicios card .cardBody h3{
+    font-size: 1em;
+}
+#pageServicios  card  img{
+    width: 100%;
+    height: auto;
+    grid-column: 1/2;
+}
+#pageServicios  card  .cardBody{
+    width: 100%;
+    height: auto;
+    background-color: #085394;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+#pageServicios  card  .icon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 600px){
+    #pageServicios  card{
+        grid-template-columns: 150px 1fr;
+        font-size: 10px;
+    }
+    #pageServicios  card  .cardBody {
+        font-size: 12px;
+    }
+    #pageServicios  card  .icon{
+        width: 20px;
+        height: 20px;
+        fill: white;
+        top: 0px;
+        right: 5px
+    }
+}
+/* --------------------  */
 
 
 /*--- css for general use ---*/
@@ -437,6 +525,7 @@ footer{
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
 }
 .scrollCustomizedVertical::-webkit-scrollbar{
     height: 5px;
@@ -506,5 +595,19 @@ footer{
     width: 25px;
 }
 /* ---------------- */
+/* -------- scrollAnimation css -------- */
+.scrollAnimation{
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    border: solid 1px black;
+}
+/* ---------------- */
 .hide {display: none !important;}
+.iconsList{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /* --------------------  */
