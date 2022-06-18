@@ -184,28 +184,14 @@
     </footer>
     <!-- script responsive navbar menu -->
     <script src="../scripts/responsiveNavBar.js"></script>
+    <!-- script loading -->
     <script src="../scripts/loading.js"></script>
+    <!-- script scrolling Animation -->
+    <script src="../scripts/scrollAnimation.js"></script>
+    <!-- script for general use-->
     <script>
         const cardList = document.querySelectorAll('card');
-        function showElement(entryList,config) {
-            entryList.forEach( entry =>{
-                if(entry.isIntersecting){
-                    const element = entry.target
-                    element.classList.add('scrollAnimation')
-                    console.log(element)
-                }
-            })
-        }
-        const observer = new IntersectionObserver(showElement,{
-            root: null,
-            rootMargin: '0px 0px 0px 0px',
-            threshold: 0.6,
-        })
-
-        cardList.forEach( card =>{
-            observer.observe(card)
-        })
-        
+        scrollAnimation(cardList,'scrollAnimationFadeIn') 
     </script>
 </body>
 
