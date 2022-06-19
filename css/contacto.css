@@ -201,7 +201,7 @@ label,h1,h2{
 }
 /* ---------------- */
 /* media query */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     #formConsulta {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -7,25 +7,23 @@
     <!-- fav icon -->
     <link rel="shortcut icon" href="../img/favIcon.png">
     <!-- native css -->
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <!-- doc title -->
     <title>One More Travel</title>
 </head>
 
 <body>
-    <!-- header -->
-    <header>
+     <!-- header -->
+     <header>
         <!-- navbar -->
         <nav>
-            <a href="../index.html"><img id="navLogo" src="../img/onemoretravel-logo.png" alt="logo empresa" /></a>
+            <a href="../index.html"><img id="navLogo" src="../img/onemoretravel-logo.png" alt="logo empresa"/></a>
             <ul id="linkList" class="linkList">
-                <li class="links"><a href="../index.html">Home</a></li>
-                <li class="links"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="links"><a href="../pages/destinos.html">Destinos</a></li>
-                <li class="links"><a href="../pages/hoteles.html">Hoteles</a></li>
-                <li class="links"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="navLinks"><a href="../index.html">Home</a></li>
+                <li class="navLinks"><a href="../pages/servicios.html">Servicios</a></li>
+                <li class="navLinks"><a href="../pages/destinos.html">Destinos</a></li>
+                <li class="navLinks"><a href="../pages/hoteles.html">Hoteles</a></li>
+                <li class="navLinks"><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
             <!-- for mobile view -->
             <div id="btnCloseMenu" class="btnCloseMenu hide">
@@ -40,9 +38,8 @@
             <!-------------------->
         </nav>
     </header>
-    <h1>Envianos tu consulta</h1>
     <!-- formulario de contacto (label + input) -->
-    <form id="formConsulta" action="./contacto.html" method="POST">
+    <form id="formConsulta" class="formConsulta" action="./contacto.html" method="POST">
         <h2 id="lblDatosPersonales">Datos personales:</h2>
         <label id="lblName" for="name">Nombre</label>
         <input id="name" type="text" placeholder="Escribá su nombre" class="input" />
