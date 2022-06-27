@@ -171,7 +171,6 @@ footer{
     border-bottom: 2px solid white;
 }
 .socialMediaLink>svg:hover{
-    animation: goUp 0.5s ease-in-out forwards;
     transition: 0.25s ease-in-out;
     transform: translateY(-5px);
 }
@@ -483,319 +482,11 @@ footer{
 /* --------------------  */
 
 /* css for contacto page */
-.formConsulta .input{
-    height: 25px;
-    width: 100%;
-    max-width: 250px;
-}
 #formConsulta{
     width: 100%;
     height: auto;
-    min-height: 450px;
-    background-color: #f1c232;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto ;
-    row-gap: 20px;
-    column-gap: 10px;
-    padding: 10px;
-}
-.formConsulta  label,h2{
-    color: white;
-    font-weight: bold;
-    background-color: #f1c232;
-}
-#lblDatosPersonales{
-    grid-row: 1/2;
-    grid-column: 1/3;
-    justify-self: center;
-    width: 100%;
-}
-#lblPasajeDestino{
-    grid-row: 1/2;
-    grid-column: 3/5;
-    justify-self: center;
-    width: 100%;
-    
-}
-
-/* -- input name -- */
-#lblName{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-#name{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-/*------------------*/
-
-/* -- input last name -- */
-#lblLastName {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#lastName {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-/*------------------*/
-
-/* -- input phone -- */
-#lblPhone {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-#phone {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-/*------------------*/
-
-/* -- input email -- */
-#lblEmail {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-#email {
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-/*------------------*/
-
-/* -- input residencia -- */
-#lblResidencia {
-    grid-column: 1/2;
-    grid-row: 6/7;
-}
-#adress {
-    grid-column: 1/2;
-    grid-row: 7/8;
-}
-/*------------------*/
-
-/* -- input nacionalidad -- */
-#lblNationality {
-    grid-column: 2/3;
-    grid-row: 6/7;
-}
-#nationality {
-    grid-column: 2/3;
-    grid-row: 7/8;
-}
-/*------------------*/
-
-/* -- input origen -- */
-#lblOrigen {
-    grid-column: 3/4;
-    grid-row: 2/3
-}
-#origen {
-    grid-column: 3/4;
-    grid-row: 3/4
-}
-/*------------------*/
-
-/* -- input destino -- */
-#lblDestino {
-    grid-column: 4/5;
-    grid-row: 2/3
-}
-#destino {
-    grid-column: 4/5;
-    grid-row: 3/4
-}
-/*------------------*/
-
-/* -- input partida -- */
-#lblPartida {
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-#partida {
-    grid-column: 3/4;
-    grid-row: 5/6;
-}
-/*------------------*/
-
-/* -- input regreso -- */
-#lblRegreso {
-    grid-column: 4/5;
-    grid-row: 4/5;
-}
-#regreso {
-    grid-column: 4/5;
-    grid-row: 5/6;
-}
-/*------------------*/
-
-/* -- input motivo -- */
-#lblMotivo {
-    grid-column: 3/4;
-    grid-row: 6/7;
-}
-#motivo {
-    grid-column: 3/4;
-    grid-row: 7/8;
-}
-/*------------------*/
-
-#btnSubmit{
-    background-color: white;
-    border: solid 2px white;
-    cursor: pointer;
-    grid-column: 2/4;
-    grid-template-rows: 8/9;
-    width: 100%;
-    max-width: 250px;
-    justify-self: center;
-}
-
-@media (max-width: 600px) {
-    #formConsulta {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 10px;
-    }
-    #lblDatosPersonales {
-        grid-row: 1/2;
-        grid-column: 1/3;
-        justify-self: center;
-        border-top: 2px white solid;
-    }
-    #lblPasajeDestino {
-        grid-row: 8/9;
-        grid-column: 1/3;
-        justify-self: center;
-        border-top: 2px white solid;
-    }
-
-    /* -- input name -- */
-    #lblName {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    #name {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    /*------------------*/
-
-    /* -- input last name -- */
-    #lblLastName {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    #lastName {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    /*------------------*/
-
-    /* -- input phone -- */
-    #lblPhone {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    #phone {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    /*------------------*/
-
-    /* -- input email -- */
-    #lblEmail {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-    #email {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-    /*------------------*/
-
-    /* -- input residencia -- */
-    #lblResidencia {
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-    #adress {
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-    /*------------------*/
-
-    /* -- input nacionalidad -- */
-    #lblNationality {
-        grid-column: 2/3;
-        grid-row: 6/7;
-    }
-    #nationality {
-        grid-column: 2/3;
-        grid-row: 7/8;
-    }
-    /*------------------*/
-
-    /* -- input origen -- */
-    #lblOrigen {
-        grid-column: 1/2;
-        grid-row: 10/11;
-    }
-    #origen {
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-    /*------------------*/
-
-    /* -- input destino -- */
-    #lblDestino {
-        grid-column: 2/3;
-        grid-row: 10/11;
-    }
-    #destino {
-        grid-column: 2/3;
-        grid-row: 11/12;
-    }
-    /*------------------*/
-
-    /* -- input partida -- */
-    #lblPartida {
-        grid-column: 1/2;
-        grid-row: 12/13;
-    }
-    #partida {
-        grid-column: 1/2;
-        grid-row: 13/14;
-    }
-    /*------------------*/
-
-    /* -- input regreso -- */
-    #lblRegreso {
-        grid-column: 2/3;
-        grid-row: 12/13;
-    }
-    #regreso {
-        grid-column: 2/3;
-        grid-row: 13/14;
-    }
-    /*------------------*/
-
-    /* -- input motivo -- */
-    #lblMotivo {
-        grid-column: 1/2;
-        grid-row: 14/15;
-    }
-
-    #motivo {
-        grid-column: 1/4;
-        grid-row: 15/16;
-    }
-    /*------------------*/
-    #btnSubmit{
-        grid-column: 1/4;
-        grid-row: 18/19;
-    }
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /* --------------------  */
 
@@ -808,6 +499,7 @@ footer{
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 10px;
 }
 #sectionPortada{
     position: relative;
@@ -878,13 +570,32 @@ footer{
     position: absolute;
     left: 5px;
 }
-#sectionDestinos{
+.sectionDestinos{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.scrollXcontainer{
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(250px,1fr));*/
+    grid-auto-flow: column;
     justify-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
     gap: 10px;
+}
+.scrollXcontainer .card{
+    height: auto;
+    width: 200px;
+    scroll-snap-align: center;
 }
 @media (max-width: 600px) {
     .portadaContent{
@@ -996,4 +707,9 @@ button:hover{
     justify-content: space-around;
     align-items: center;
 }
+/* -------- para sobreescribir bootstrap css -------- */
+.row{
+    margin: 0;
+}
+/* ---------------- */
 /* --------------------  */
