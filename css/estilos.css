@@ -1,3 +1,6 @@
+html{
+    font-size: 16px;
+}
 /*--- css for navbar ---*/
 nav{
     height: auto;
@@ -51,22 +54,32 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: closeMenu 0.5s ease-in-out forwards;
+    overflow: hidden;
 }
 .btnCloseMenu > span:nth-child(1){
     position: absolute;
-    animation: firstBar 0.5s ease-in-out forwards;
+    transform: translateY(-8px);
+    animation: firstBar 0.5s 0.25s ease-in-out forwards;
 }
 .btnCloseMenu>span:nth-child(2) {
     position: absolute;
-    animation: secondBar 0.5s ease-in-out forwards;
+    animation: secondBar 0.25s ease-in-out forwards;
+}
+.btnCloseMenu>span:nth-child(3) {
+    position: absolute;
+    transform: translateY(8px);
+    animation: thirdBar 0.5s 0.25s ease-in-out forwards;
 }
 @keyframes firstBar {
-    0% {transform: translateY(-20px) rotate(0deg);}
+    0% {transform: translateY(-8px) rotate(0deg);}
     100% {transform: translateY(0px) rotate(50deg);}
 }
 @keyframes secondBar {
-    0% {transform: translateY(20px) rotate(0deg);}
+    0% {transform: translateX(0px)}
+    100% {transform: translateX(-26px)}
+}
+@keyframes thirdBar {
+    0% {transform: translateY(8px) rotate(0deg);}
     100% {transform: translateY(0px) rotate(-50deg);}
 }
 .bar {
@@ -523,17 +536,16 @@ footer{
     width: 100%;
     height: 100%;
     max-height: 100px;
-    font-size: 25px;
 }
 .portadaContent h2{
     color: white;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 .portadaContent h4{
     color: white;
     background-color: transparent;
-    font-size: 0.8em;
+    font-size: 1.5rem;
 }
 .searchContainer{
     position: relative;
@@ -553,7 +565,7 @@ footer{
     color: white;
     width: 80px;
     height: 30px;
-    font-size: 20px;
+    font-size: 1rem;
     border: solid 1px transparent;
 }
 .searchContainer input{
@@ -564,7 +576,7 @@ footer{
     outline: none;
     color: #085394;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1rem;
 }
 .searchContainer svg{
     position: absolute;
@@ -591,6 +603,7 @@ footer{
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
     gap: 10px;
+    padding: 20px;
 }
 .scrollXcontainer .card{
     height: auto;
@@ -598,17 +611,7 @@ footer{
     scroll-snap-align: center;
 }
 @media (max-width: 600px) {
-    .portadaContent{
-        font-size: 20px;
-    }
-    .searchContainer button{
-        background-color: #085394;
-        color: white;
-        width: 70px;
-        height: 20px;
-        border: solid 1px transparent;
-        font-size: 10px;
-    }
+    
 }
 /* --------------------  */
 
@@ -708,6 +711,9 @@ button:hover{
     align-items: center;
 }
 /* -------- para sobreescribir bootstrap css -------- */
+.card{
+    box-shadow: 0px 0px 10px 1px;
+}
 .row{
     margin: 0;
 }
