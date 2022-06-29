@@ -714,6 +714,11 @@ button:hover{
 .card{
     box-shadow: 0px 0px 10px 1px;
 }
+.card-link{
+    color: #085394;
+    text-decoration: none;
+    font-weight: bold;
+}
 .row{
     margin: 0;
 }
