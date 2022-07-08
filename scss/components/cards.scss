@@ -1,0 +1,35 @@
+div{
+    &.card{
+        width: 100%;
+        max-width: 450px;
+        margin: 0;
+        padding: 0;
+        @media  (max-width:500px) {
+            max-width: 350px;
+        }
+        @media  (max-width:400px) {
+            max-width: none;
+            border-radius: 0;
+        }
+        &.cardBlue{
+            background-color: #085394;
+            h5,p{
+                color: white;
+            }
+        }
+        &.cardWhite{
+            background-color: white;
+            h5,p{
+                color: #085394;
+            }
+        }
+        .col-sm-4{
+            @media  (max-width:500px) {
+                overflow: hidden;
+                height: 400px;
+            }
+        }
+    }
+}
+
+/* https://www.sassmeister.com/ */
