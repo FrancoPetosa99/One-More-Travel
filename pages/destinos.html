@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One More Travel página de destinos">
+    <meta name="keywords" content="Destino turistico, Viajes, Caribe, Europa, Playas">
     <!-- fav icon -->
     <link rel="shortcut icon" href="../img/favIcon.png">
     <!-- bootstrap -->
@@ -11,10 +13,10 @@
     <!-- native css -->
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- doc title -->
-    <title>One More Travel</title>
-</head>
+    <title>One More Travel-Destinos</title>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
         <!-- navbar -->
@@ -41,9 +43,10 @@
             <!-------------------->
         </nav>
     </header>
+    <h1>Destinos Únicos</h1>
     <main id="explorarPage">
-        <!-- portada section-->
-        <section id="sectionPortada">
+      <!-- portada section-->
+      <section id="sectionPortada">
           <!-- carrusel bootstrap - automatic slide -->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" interval=2500 pause="hover">
                 <div class="carousel-inner">
@@ -53,155 +56,195 @@
                   <div class="carousel-item">
                     <img src="../img/destinos/portada2.jpg" class="d-block w-100" alt="segunda imagen carrusel">
                   </div>
-                  <div class="carousel-item">
-                    <img src="../img/destinos/portada3.jpg" class="d-block w-100" alt="tercer imagen carrusel">
-                  </div>
                 </div>
             </div>
             <div class="portadaContent">
                 <h2>Animate a explorar</h2>
                 <h4>Conoce el mundo con nosotros</h4>
-                <div class="searchContainer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                    <input id="searchInput" type="search" />
-                    <button id="btnSearch">Buscar</button>
+            </div>
+      </section>
+      <!-- cards caribe section-->
+      <section id="destinoCaribe" class="sectionDestinos">
+        <!-- Title: Caribe-->
+        <h2 class="fw-semi-bold text-start" style="width: 100%; padding-left:10px ;">Caribe</h2>
+        <!-- scroll container -->
+        <div class="scrollXcontainer scrollCustomizedHorizontal">
+          <div class="card">
+            <img src="../img/destinos/card1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Puntacana</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Disponible</li>
+                <li class="list-group-item">400-600 USD</li>
+                <li class="list-group-item">Temporada baja</li>
+              </ul>
+              <div class="card-body">
+                <a href="./contacto.html" class="card-link">Comprar</a>
+              </div>
+          </div>
+            <div class="card">
+              <img src="../img/destinos/card2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Salvador</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Disponible</li>
+                <li class="list-group-item">400-600 USD</li>
+                <li class="list-group-item">Temporada baja</li>
+              </ul>
+              <div class="card-body">
+                <a href="./contacto.html" class="card-link">Comprar</a>
+              </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R. Dominicana</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">1500-1800 USD</li>
+                  <li class="list-group-item">Temporada alta</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Comprar</a>
                 </div>
             </div>
-        </section>
-        <!-- cards destinos section-->
-        <section id="destinoCaribe" class="sectionDestinos">
-          <!-- Title: Caribe-->
-          <h2 class="fw-semi-bold text-start" style="width: 100%; padding-left:10px ;">Caribe</h2>
-          <!-- scroll container -->
-          <div class="scrollXcontainer scrollCustomizedHorizontal">
             <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Puntacana</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Salvador</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">R. Dominicana</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Bahía Santa</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Playa del Carmen</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Playa Paraiso</h5>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                  </div>
-              </div>
-              <div class="card">
-                <img src="../img/caribe.jpg" class="card-img-top" alt="...">
+                <img src="../img/destinos/card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bahía Santa</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">1500-1800 USD</li>
+                  <li class="list-group-item">Temporada alta</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/card5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Playa del Carmen</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">2500-4000 USD</li>
+                  <li class="list-group-item">Temporada media</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/card6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Playa Paraiso</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">2500-4000 USD</li>
+                  <li class="list-group-item">Temporada media</li>
                 </ul>
                 <div class="card-body">
-                  <a href="#" class="card-link">Comprar</a>
+                  <a href="./contacto.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- cards europa section-->
+      <section id="destinoEuropa" class="sectionDestinos">
+        <!-- Title: Caribe-->
+        <h2 class="fw-semi-bold text-start" style="width: 100%; padding-left:10px ;">Europa</h2>
+        <!-- scroll container -->
+        <div class="scrollXcontainer scrollCustomizedHorizontal">
+          <div class="card">
+            <img src="../img/destinos/card1.jpg" class="card-img-top" alt="Imagen Ibiza">
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Disponible</li>
+                <li class="list-group-item">200-500 USD</li>
+                <li class="list-group-item">Temporada Alta</li>
+              </ul>
+              <div class="card-body">
+                <a href="./contacto.html" class="card-link">Consultar</a>
+              </div>
+          </div>
+            <div class="card">
+              <img src="../img/destinos/card2.jpg" class="card-img-top" alt="Imagen Islas Canarias">
+              <div class="card-body">
+                <h5 class="card-title">Islas Canarias</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Disponible</li>
+                <li class="list-group-item">200-500 USD</li>
+                <li class="list-group-item">Temporada media</li>
+              </ul>
+              <div class="card-body">
+                <a href="./contacto.html" class="card-link">Consultar</a>
+              </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/card3.jpg" class="card-img-top" alt="Imagen Lago Ness">
+                <div class="card-body">
+                  <h5 class="card-title">Lago Ness</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">250-500 USD</li>
+                  <li class="list-group-item">Temporada alta</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Consultar</a>
                 </div>
             </div>
             <div class="card">
-              <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Playa Paraiso</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Comprar</a>
-              </div>
-          </div>
-          <div class="card">
-            <img src="../img/caribe.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Playa Paraiso</h5>
+                <img src="../img/destinos/card4.jpg" class="card-img-top" alt="Imagen Carrasco">
+                <div class="card-body">
+                  <h5 class="card-title">Carrasco</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">200-800 USD</li>
+                  <li class="list-group-item">Temporada baja</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Consultar</a>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Comprar</a>
+            <div class="card">
+                <img src="../img/destinos/card5.jpg" class="card-img-top" alt="Imagen Mikonos">
+                <div class="card-body">
+                  <h5 class="card-title">Mikonos</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">400-550 USD</li>
+                  <li class="list-group-item">Temporada baja</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Consultar</a>
+                </div>
             </div>
-          </div>
+            <div class="card">
+                <img src="../img/destinos/card6.jpg" class="card-img-top" alt="Imagen Sisilla">
+                <div class="card-body">
+                  <h5 class="card-title">Sisilla</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Disponible</li>
+                  <li class="list-group-item">200-500 USD</li>
+                  <li class="list-group-item">Temporada Alta</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./contacto.html" class="card-link">Consultar</a>
+                </div>
+            </div>
         </div>
       </section>
     </main>
@@ -225,7 +268,7 @@
       <ul id="footerColumnContact" class="footerColumns">
           <h4>Contacto </h4>
           <li><a href="https://api.whatsapp.com/send?phone=+5491165895993&text=Hola Cristian! Queria hacerte la siguiente consulta:" class="footerLinks">+1134529277</a></li>
-          <li><a href="mailto:onemoretravel@gmail.com" class="footerLinks">onemoretravel@gmail.com</a></li>
+          <li><a href="mailto:consultas@gmail.com" class="footerLinks">consultas@gmail.com</a></li>
       </ul>
       <ul id="footerColumnDestinos" class="footerColumns">
           <h4>Destinos</h4>

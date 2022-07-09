@@ -1,8 +1,8 @@
 @import '../variables/colors.scss';
+@import '../variables/fonts.scss';
 
-@mixin cardBtn($font-color,$background-color) {
-    background-color: $background-color ;
-    color: $font-color;
+/*estilos base para el btn de la card*/
+.btn-default{
     border: solid 1px transparent; 
     border-radius: 5px;
     height: auto;
@@ -11,6 +11,14 @@
     padding: 5px;
     font-weight: bold;
     font-size: 15px;
+    font-family: map-get($fuentes , btn_text )
+}
+
+/*la funcion cardBtn sostiene todos los estilos que lleva el btn de la card*/
+@mixin cardBtn($font-color,$background-color) {
+    @extend .btn-default;
+    background-color: $background-color ;
+    color: $font-color;
 }
 
 @mixin cardBtn-hover($font-color,$background-color) {
