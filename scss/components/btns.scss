@@ -1,0 +1,36 @@
+@import '../variables/colors.scss';
+
+@mixin cardBtn($font-color,$background-color) {
+    background-color: $background-color ;
+    color: $font-color;
+    border: solid 1px transparent; 
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@mixin cardBtn-hover($font-color,$background-color) {
+    background-color: $background-color ;
+    color: $font-color;
+    border: solid 1px $font-color; 
+}
+
+a{
+    &.blueCard{
+        @include cardBtn($color-primary-btn, $color-secondary-btn)
+    }
+    &.blueCard:hover{
+        @include cardBtn-hover($color-secondary-btn, $color-primary-btn)
+    }
+
+    &.whiteCard{
+        @include cardBtn($color-secondary-btn, $color-primary-btn)
+    }
+    &.whiteCard:hover{
+        @include cardBtn-hover($color-primary-btn, $color-secondary-btn)
+    }
+}

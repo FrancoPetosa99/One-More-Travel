@@ -1,3 +1,5 @@
+@import '../variables/colors.scss';
+
 div{
     &.card{
         width: 100%;
@@ -12,15 +14,15 @@ div{
             border-radius: 0;
         }
         &.cardBlue{
-            background-color: #085394;
+            background-color: $color-primary-card;
             h5,p{
-                color: white;
+                color: $color-secondary-card;
             }
         }
         &.cardWhite{
-            background-color: white;
+            background-color: $color-secondary-card;
             h5,p{
-                color: #085394;
+                color: $color-primary-card;
             }
         }
         .col-sm-4{
@@ -33,3 +35,4 @@ div{
 }
 
 /* https://www.sassmeister.com/ */
+
