@@ -5,7 +5,7 @@
 */
 
 function loading() {
-  const body = document.querySelector("body");
+  const body = document.querySelector("html");
 
   //build-up the loading (Html element)
   const loadingModal = document.createElement("div");
@@ -15,7 +15,7 @@ function loading() {
   body.appendChild(loadingModal);
 
   //Once the page is completed loaded, it removes the loading (Html element)
-  window.addEventListener("load", () => {
+  window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       body.removeChild(loadingModal);
     }, 1000);

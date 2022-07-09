@@ -1,0 +1,25 @@
+/* -------- loading css -------- */
+.loadingModal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 10000000000000000;
+}
+#spinner{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+    border-left: solid 2px #f1c232;
+    animation: spin 0.5s ease-in-out infinite;
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+/* ---------------- */
