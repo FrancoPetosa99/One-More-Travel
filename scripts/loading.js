@@ -4,28 +4,24 @@
     purpose: show a loading spinner until the page is completed loaded. Gives a better UX/UI.
 */
 
-const body = document.querySelector("html");
+function loading() {
 
-//build-up the loading (Html element)
-const loadingModal = document.createElement("div");
-loadingModal.className = "loadingModal";
-loadingModal.innerHTML = `<div id="spinner"></div>`;
+  const body = document.querySelector("html");
 
-function loading(setLoading) {
+  //build-up the loading (Html element)
+  const loadingModal = document.createElement("div");
+  loadingModal.className = "loadingModal";
+  loadingModal.innerHTML = `<div id="spinner"></div>`;
 
-  if(setLoading){
+  body.appendChild(loadingModal);
+  
+  //remove loading once page is fully loaded
+  window.addEventListener('load', ()=> {
     
-    body.appendChild(loadingModal);
-    return
-  }else{
+    setTimeout(() => {
+      body.removeChild(loadingModal);
+    }, 1000);
 
-    //Once the page is completed loaded, it removes the loading (Html element)
-    window.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        body.removeChild(loadingModal);
-      }, 1000);
-    });
-
-  }
+  });
 }
-loading(true);
+loading();
