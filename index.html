@@ -47,125 +47,127 @@
         </nav>
     </header>
     <h1>Somos OneMoreTravel</h1>
-    <!-- carrusel bootstrap -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
-        <img id="favIcon" src="./img/onemoretravel-logo.png" />
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img//index/1.jpg" class="d-block w-100" alt="primer imagen del carrusel">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carouselLabel">Los mejores destinos te esperan</h5>
+    <main id="index">
+        <!-- carrusel bootstrap -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+            <img id="favIcon" src="./img/onemoretravel-logo.png" />
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img//index/1.jpg" class="d-block w-100" alt="primer imagen del carrusel">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5 class="carouselLabel">Los mejores destinos te esperan</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="img2carrusel" src="./img/index/2.jpg" class="d-block w-100" alt="segunda imagen del carrusel">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5 class="carouselLabel">Animate a explorar</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index/3.jpg" class="d-block w-100" alt="tercera imagen del carrusel">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5 class="carouselLabel">La aventura esta a un paso adelante</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index/4.jpg" class="d-block w-100" alt="cuarta imagen del carrusel">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5 class="carouselLabel">Te invitamos a conocer el sur de Argentina</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index/5.jpg" class="d-block w-100" alt="quinta imagen del carrusel">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5 class="carouselLabel">Conoce culturas y ciudades nuevas</h5>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img id="img2carrusel" src="./img/index/2.jpg" class="d-block w-100" alt="segunda imagen del carrusel">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carouselLabel">Animate a explorar</h5>
-                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2>Los destinos más populares</h2>
+        <!-- contenedor de cards 'Los destinos más populares'-->
+        <section id="destinosPopulares" class="cardContainer scrollCustomizedHorizontal">
+            <div class="cardPromociones">
+                <span class="offerIcon">50% off</span>
+                <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen"/>
+                <h6 class="cardTitle">Playa del Carmén</h6>
+                <p class="text">900 USD</p>
+                <p class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
             </div>
-            <div class="carousel-item">
-                <img src="./img/index/3.jpg" class="d-block w-100" alt="tercera imagen del carrusel">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carouselLabel">La aventura esta a un paso adelante</h5>
-                </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
+                <h6 class="cardTitle">Ibiza</h6>
+                <p class="text">600 USD</p>
+                <p class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
             </div>
-            <div class="carousel-item">
-                <img src="./img/index/4.jpg" class="d-block w-100" alt="cuarta imagen del carrusel">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carouselLabel">Te invitamos a conocer el sur de Argentina</h5>
-                </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen" />
+                <h6 class="cardTitle">Bahía del salvador</h6>
+                <p class="text">200 USD</p>
+                <p class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
             </div>
-            <div class="carousel-item">
-                <img src="./img/index/5.jpg" class="d-block w-100" alt="quinta imagen del carrusel">
-                <div class="carousel-caption d-none d-sm-block">
-                    <h5 class="carouselLabel">Conoce culturas y ciudades nuevas</h5>
-                </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/oferta1.jpg" alt="imagen" />
+                <h6 class="cardTitle">Mardel</h6>
+                <p id="precio" class="text">250 USD</p>
+                <p id="noches" class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
             </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <h2>Los destinos más populares</h2>
-    <!-- contenedor de cards 'Los destinos más populares'-->
-    <section id="destinosPopulares" class="cardContainer scrollCustomizedHorizontal">
-        <div class="cardPromociones">
-            <span class="offerIcon">50% off</span>
-            <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen"/>
-            <h6 class="cardTitle">Playa del Carmén</h6>
-            <p id="precio" class="text precio">900 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
-            <h6 class="cardTitle">Ibiza</h6>
-            <p id="precio" class="text precio">600 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen" />
-            <h6 class="cardTitle">Bahía del salvador</h6>
-            <p id="precio" class="text precio">200 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/oferta1.jpg" alt="imagen" />
-            <h6 class="cardTitle">Mardel</h6>
-            <p id="precio" class="text precio">250 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <span class="offerIcon">50% off</span>
-            <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen" />
-            <h6 class="cardTitle">Pinamar</h6>
-            <p id="precio" class="text precio">290 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
-            <h6 class="cardTitle">Bombihas</h6>
-            <p id="precio" class="text precio">260 USD</p>
-            <p id="noches" class="text noches">7 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/oferta1.jpg" alt="imagen" />
-            <h6 class="cardTitle">Indonesia</h6>
-            <p id="precio" class="text precio">450 USD</p>
-            <p id="noches" class="text noches">9 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-        <div class="cardPromociones">
-            <spa class="offerIcon">50% off</spa>
-            <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
-            <h6 class="cardTitle">Playa blanca</h6>
-            <p id="precio" class="text precio">250 USD</p>
-            <p id="noches" class="text noches">10 noches</p>
-            <button class="btnCardPromociones">Consultar</button>
-        </div>
-    </section>
+            <div class="cardPromociones">
+                <span class="offerIcon">50% off</span>
+                <img class="imgCardPromociones" src="./img/index/summer.jpg" alt="imagen" />
+                <h6 class="cardTitle">Pinamar</h6>
+                <p class="text">290 USD</p>
+                <p class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
+            </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
+                <h6 class="cardTitle">Bombihas</h6>
+                <p class="text">260 USD</p>
+                <p class="text">7 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
+            </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/oferta1.jpg" alt="imagen" />
+                <h6 class="cardTitle">Indonesia</h6>
+                <p class="text">450 USD</p>
+                <p class="text">9 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
+            </div>
+            <div class="cardPromociones">
+                <spa class="offerIcon">50% off</spa>
+                <img class="imgCardPromociones" src="./img/index/playa barco.jpg" alt="imagen" />
+                <h6 class="cardTitle">Playa blanca</h6>
+                <p class="text">250 USD</p>
+                <p class="text">10 noches</p>
+                <button class="btnCardPromociones">Consultar</button>
+            </div>
+        </section>
+    </main>
     <!-- footer -->
     <footer>
         <h3 id="footerTitle">One More Travel</h3>

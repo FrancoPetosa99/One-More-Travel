@@ -8,10 +8,14 @@
     height: auto;
     width: 200px;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.5rem;
     font-weight: bold;
-    font-size: 15px;
-    font-family: map-get($fuentes , btn_text )
+    font-size: 1rem;
+    font-family: map-get($fuentes , btn_text );
+    @media  (min-width:1200px) {
+        font-size: 1.25rem;
+    }
+    
 }
 
 /*la funcion cardBtn sostiene todos los estilos que lleva el btn de la card*/
@@ -42,3 +46,4 @@ a{
         @include cardBtn-hover($color-primary-btn, $color-secondary-btn)
     }
 }
+

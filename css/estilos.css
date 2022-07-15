@@ -232,6 +232,14 @@ footer{
 /* --------------------  */
 
 /*--- css for index page ---*/
+#index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
 #favIcon{
     position: absolute;
     top: 10px;
@@ -284,7 +292,7 @@ footer{
 .cardPromociones{
     height: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     box-shadow: 0px 0px 2px 2px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -347,10 +355,7 @@ footer{
     font-size: 1.25rem;
     transition: 0.2s ease-in-out;
     padding: 0.5rem;
-}
-.btnCardPromociones:hover{
-    font-weight: bold;
-    font-size: 16px;
+    cursor: pointer;
 }
 .starList{
     height: auto;
@@ -408,17 +413,13 @@ footer{
     grid-template-columns: 250px 1fr;
     box-shadow: 0px 0px 15px 1px;
     position: relative;
-    font-size: 16px;
     opacity: 0;
     transform: translateX(-10vw);
     transition: 0.5s ease-in-out;
 }
-#pageServicios card .cardBody p{
-    font-size: 1em;
-    padding-left: 4px;
-}
+
 #pageServicios card .cardBody h3{
-    font-size: 1em;
+    font-size: 1rem;
 }
 #pageServicios  card  img{
     width: 100%;
@@ -448,13 +449,44 @@ footer{
 .serviciosCardLink{
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 .serviciosCardLink:hover{
     cursor: pointer;
     text-decoration: underline;
 }
+@media (min-width: 1200px){
+    #pageServicios card .cardBody h3{
+        font-size: 1.5rem;
+    }
+    .serviciosCardLink{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    #pageServicios  card{
+        max-width: 800px;
+        grid-template-columns: 400px 1fr;
+        font-size: 10px;
+    }
+    #pageServicios card .cardBody p{
+        font-size: 1.5rem;
+        padding-left: 4px;
+    }
+    #pageServicios  card  .cardBody {
+        font-size: 12px;
+    }
+    #pageServicios  card  .icon{
+        width: 40px;
+        height: 40px;
+        fill: white;
+        top: 0px;
+        right: 5px
+    }
+}
 @media (max-width: 600px){
     #pageServicios  card{
+        width: 100%;
         grid-template-columns: 150px 1fr;
         font-size: 10px;
     }
@@ -512,6 +544,7 @@ footer{
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    max-width: 1200px;
     padding-bottom: 10px;
     background: rgb(240,244,245);
     background: linear-gradient(90deg, rgba(240,244,245,0) 0%, rgba(0,0,0,0.513509627483806) 50%, rgba(255,255,255,0) 100%);
@@ -540,8 +573,7 @@ footer{
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    /*grid-auto-flow: column;*/
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     justify-items: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -552,7 +584,7 @@ footer{
 .scrollXcontainer .card{
     height: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     scroll-snap-align: center;
 }
 @media (max-width: 500px) {
@@ -667,6 +699,9 @@ button:hover{
 }
 .row{
     margin: 0;
+}
+.carousel{
+    max-width: 1200px;
 }
 /* ---------------- */
 /* --------------------  */
