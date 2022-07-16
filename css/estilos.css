@@ -553,7 +553,8 @@ footer{
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    justify-items: center;
     overscroll-behavior-x: contain;
     gap: 25px;
     padding: 20px;
@@ -561,7 +562,7 @@ footer{
 .scrollXcontainer .card{
     height: auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     scroll-snap-align: center;
 }
 @media (max-width: 500px) {
