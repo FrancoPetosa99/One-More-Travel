@@ -270,7 +270,7 @@ footer{
 .cardPromociones{
     height: auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     box-shadow: 0px 0px 2px 2px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -285,7 +285,7 @@ footer{
     font-weight: bold;
     justify-self: center;
     align-self: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 .offerIcon{
     height:50px;
@@ -343,7 +343,17 @@ footer{
     align-items: center;
     gap: 5px;
 }
-@media (min-width:1200px){
+@media (min-width:1300px){
+    .cardContainer{
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+        justify-items: center;
+        padding: 50px;
+        gap: 4rem;
+        margin-bottom: 1rem;
+    }
     #favIcon{
         position: absolute;
         top: 10px;
