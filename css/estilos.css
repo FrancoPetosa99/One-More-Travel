@@ -574,12 +574,12 @@ footer{
     max-width: 500px;
     scroll-snap-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
     .scrollXcontainer{
         height: auto;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
         justify-items: center;
         overscroll-behavior-x: contain;
         gap: 25px;
