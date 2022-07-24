@@ -606,6 +606,13 @@ footer{
         padding: 20px;
     }
 }
+@media (max-width: 500px) {
+    .portadaContent{
+        height: 100%;
+        background: rgb(240,244,245);
+        background: linear-gradient(180deg, rgba(240,244,245,0) 0%, rgba(0,0,0,0.5275152297247023) 80%, rgba(255,255,255,0) 100%);
+    }
+}
 /* --------------------  */
 
 /*--- css for general use ---*/
@@ -733,11 +740,6 @@ button:hover{
 @media (min-width: 1200px) {
     .carouselLabel{
         font-size: 2rem;
-    }
-}
-@media (max-width: 500px) {
-    .card-body{
-        padding: 15px !important;
     }
 }
 /* ---------------- */
