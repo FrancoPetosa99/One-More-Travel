@@ -717,9 +717,6 @@ button:hover{
 .card{
     box-shadow: 0px 0px 10px 1px;
 }
-.card-body{
-    padding: 20px;
-}
 .card-link{
     color: #085394;
     text-decoration: none;
@@ -751,6 +748,11 @@ button:hover{
 @media (min-width: 1200px) {
     .carouselLabel{
         font-size: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .card-body{
+        padding: 15px !important;
     }
 }
 /* ---------------- */
