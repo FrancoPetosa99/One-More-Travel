@@ -377,20 +377,19 @@ footer{
 @media (max-width: 500px){
     .cardContainer{
         height: auto;
-        width: 100%;
+        width: 95%;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         overscroll-behavior-x: contain;
         display: grid;
         grid-auto-flow: column;
         justify-items: flex-end;
-        gap: 25px;
-        padding: 25px;
-        padding-left: 5px;
+        gap: 1.5rem;
+        padding: 2rem;
     }
     .cardPromociones{
         height: auto;
-        width: 240px;
+        width: 300px;
         box-shadow: 0px 0px 2px 2px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -717,6 +716,9 @@ button:hover{
 /* -------- para sobreescribir bootstrap css -------- */
 .card{
     box-shadow: 0px 0px 10px 1px;
+}
+.card-body{
+    padding: 1rem;
 }
 .card-link{
     color: #085394;
