@@ -14,13 +14,6 @@ div{
                 align-items: center;
             }
         }
-        @media  (max-width:500px) {
-            max-width: 350px;
-        }
-        @media  (max-width:400px) {
-            max-width: none;
-            border-radius: 0;
-        }
         &.cardBlue{
             background-color: $color-primary-card;
             h5,p{
@@ -33,12 +26,7 @@ div{
                 color: $color-primary-card;
             }
         }
-        .col-sm-4{
-            @media  (max-width:500px) {
-                overflow: hidden;
-                height: 400px;
-            }
-        }
+        
     }
 }
 
