@@ -1,0 +1,16 @@
+{
+  "name": "one-more-travel",
+  "description": "Desarrollo Web - Coderhouse 2022",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed scss/main.scss css/hoteles.css"
+  },
+  "author": "Franco Petosa Ayala",
+  "license": "ISC",
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "2.0.4"
+  }
+}
